@@ -12,7 +12,7 @@
 | STT | Họ tên | MSSV | Email | GitHub | Vai trò |
 | --: | ------ | ---- | ----- | ------ | ------- |
 |   1 | Bùi Văn Lâm | 2A202603400 | 26ai.lambv@vinuni.edu.vn | | Trưởng nhóm & Giữ hồ sơ, Gắn nhãn 2 |
-|   2 | [Họ tên bạn Coder] | [MSSV] | [Email] | | Người viết code chính |
+|   2 | Nguyễn Huy Thư | 2A202603356 | 26ai.thunh@vinuni.edu.vn | Teddyy1101 | Người viết code chính |
 |   3 | Trần Đăng Khoa | 2A202603364 | 26ai.khoatd2@vinuni.edu.vn | | Người kiểm số & Báo cáo, Gắn nhãn 1 |
 
 *Ghi chú nhóm 3 người: Trưởng nhóm kiêm giữ hồ sơ, thiết kế pilot và gắn nhãn 2; Thành viên 2 viết code xuyên suốt; Thành viên 3 kiểm số, điền bảng chi phí/độ nhạy và gắn nhãn 1.*
