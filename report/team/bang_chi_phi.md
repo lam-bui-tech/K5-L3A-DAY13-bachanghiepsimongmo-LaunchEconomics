@@ -53,34 +53,45 @@ Trong mẫu toàn mạng có 1.200 yêu cầu, 982 thuộc phạm vi pilot và 9
 
 ## B1 · Đổi từng yếu tố
 
-| Kịch bản | Cách tính | Chi phí mỗi việc thành công | Thay đổi (%) |
+CPS gốc A2 là **4.472 đ** `simulated`. Phần trăm thay đổi dùng CPS chưa làm tròn.
+
+| Kịch bản | Cách tính | Chi phí mỗi việc thành công `simulated` | Thay đổi `simulated` |
 | --- | --- | ---: | ---: |
-| Giá token gấp đôi | 52 đ và 260 đ cho 1.000 token; giá tool giữ nguyên | ... | ... |
-| Giá token giảm một nửa | 13 đ và 65 đ | ... | ... |
-| Tỉ lệ xem lại gấp đôi | Tiền xem lại × 2 | ... | ... |
-| Tỉ lệ xem lại giảm một nửa | Tiền xem lại ÷ 2 | ... | ... |
-| Số ca làm lại gấp đôi | Tiền làm lại × 2 | ... | ... |
-| Số ca làm lại giảm một nửa | Tiền làm lại ÷ 2 | ... | ... |
-| Lương nhân viên tăng 25% | 2.500 đ mỗi phút | ... | ... |
-| Chỉ cho chạy tối đa 2 lần | Bỏ lần chạy có attempt > 2; yêu cầu có so_lan_chay > 2 coi là chuyen_nhan_vien | ... | ... |
-| Chỉ cho chạy 1 lần | Như trên với giới hạn 1 | ... | ... |
+| Giá token gấp đôi | 52 đ đầu vào và 260 đ đầu ra cho 1.000 token, giá tool giữ nguyên | 4.723 đ | +5,6% |
+| Giá token giảm một nửa | 13 đ đầu vào và 65 đ đầu ra cho 1.000 token | 4.346 đ | −2,8% |
+| Tỉ lệ xem lại gấp đôi | Tiền xem lại × 2 | 6.292 đ | +40,7% |
+| Tỉ lệ xem lại giảm một nửa | Tiền xem lại ÷ 2 | 3.562 đ | −20,3% |
+| Số ca làm lại gấp đôi | Tiền làm lại × 2 | 6.787 đ | +51,8% |
+| Số ca làm lại giảm một nửa | Tiền làm lại ÷ 2 | 3.315 đ | −25,9% |
+| Lương nhân viên tăng 25% | 2.500 đ mỗi phút | 5.506 đ | +23,1% |
+| Chỉ cho chạy tối đa 2 lần | Bỏ trace có `attempt > 2`, chuyển yêu cầu có `so_lan_chay > 2` cho nhân viên | 4.237 đ | −5,2% |
+| Chỉ cho chạy 1 lần | Áp dụng cùng quy tắc với giới hạn 1 | 4.111 đ | −8,1% |
 
 ## B2 · Đổi một cặp và xếp hạng
 
-- Giá token gấp đôi cùng lúc tỉ lệ xem lại gấp đôi: ...
-- Xếp hạng ba yếu tố ảnh hưởng mạnh nhất: 1. ... · 2. ... · 3. ...
+- Giá token và tỉ lệ xem lại cùng tăng gấp đôi đưa CPS lên **6.543 đ (+46,3%)** `simulated`. Vì hai khoản cộng độc lập và số thành công giữ nguyên, mức tăng bằng **5,6% + 40,7%**.
+- Ba kịch bản làm CPS tăng mạnh nhất `simulated` lần lượt là làm lại gấp đôi **(+51,8%)**, xem lại gấp đôi **(+40,7%)**, lương tăng 25% **(+23,1%)**.
 
 ## B3 · Giới hạn chạy lại có thật sự rẻ hơn
 
-| Giới hạn | Tổng chi phí trợ lý | Số yêu cầu không thành công | Chi phí cả hệ thống | Chi phí mỗi việc thành công |
-| --- | ---: | ---: | ---: | ---: |
-| 1 lần | ... | ... | ... | ... |
-| 2 lần | ... | ... | ... | ... |
-| 3 lần | ... | ... | ... | ... |
+Chi phí cả hệ thống bằng tổng chi phí trợ lý cộng **12.000 đ × số yêu cầu không thành công**, theo quy ước của lab. Các mức dưới đây tính trên 1.200 yêu cầu, trước chi phí cố định.
 
-- Giới hạn nào rẻ nhất cho công ty? Có trùng với giới hạn cho chi phí mỗi việc thành công thấp nhất không? ...
+| Giới hạn | Tổng chi phí trợ lý `simulated` | Số yêu cầu không thành công | Chi phí cả hệ thống `simulated` | Chi phí mỗi việc thành công `simulated` |
+| --- | ---: | ---: | ---: | ---: |
+| 1 lần | 3.621.781 đ | 319 | 7.449.781 đ | **4.111 đ** |
+| 2 lần | 4.093.220 đ | 234 | **6.901.220 đ** | 4.237 đ |
+| 3 lần | 4.373.585 đ | 222 | 7.037.585 đ | 4.472 đ |
+
+- **2 lần** cho chi phí cả hệ thống thấp nhất, **6.901.220 đ** `simulated`. Giới hạn **1 lần** cho CPS thấp nhất (**4.111 đ** `simulated`) nhưng để lại thêm **85 yêu cầu** cho nhân viên.
 
 ## B4 · Nếu phải xem lại tất cả
 
-- Chi phí mỗi việc thành công khi xem lại 100% (`noi_dia` + `hang_nang`), so với 12.000 đ: ...
-- Kết quả này nói gì về thứ pilot cần học được? ...
+Trong 982 yêu cầu `noi_dia` và `hang_nang`, có **948 yêu cầu** với ít nhất một trace `ok`, **48 ca làm lại** và **900 việc thành công**. Tính 5 phút xem lại cho mỗi yêu cầu có trace `ok`, cộng phút làm lại và **224.513 đ** tiền token và tool. Mức **15,3 phút** là trung bình từ cột `phut_lam_lai_simulated` trên toàn bộ ca làm lại. Phép tính giữ giá trị chưa làm tròn.
+
+| Phút làm lại/ca | Chi phí mỗi việc thành công `simulated` | So với 12.000 đ `simulated` | Thời gian xem lại tối đa để CPS hòa vốn `simulated` |
+| --- | ---: | ---: | ---: |
+| 9 phút theo đề bài | 11.743 đ | 0,98× | 5,1 phút/ca |
+| 15,3 phút theo CSV `simulated` | 12.415 đ | 1,03× | 4,8 phút/ca |
+
+- Xem lại 100% đưa CPS từ sát mốc lên vượt **12.000 đ** khi thời gian làm lại tăng từ **9** lên **15,3 phút/ca** `simulated`.
+- Pilot cần đo phút xem lại, phút làm lại và tỷ lệ gợi ý cần xem lại để xác định mức giảm an toàn. Với kịch bản làm lại **15,3 phút/ca**, thời gian xem lại phải dưới khoảng **4,8 phút/ca** để CPS thấp hơn mốc 12.000 đ `simulated`, trước cố định và xử lý thay.
