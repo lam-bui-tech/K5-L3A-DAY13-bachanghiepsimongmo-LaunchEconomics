@@ -2,51 +2,27 @@
 
 ## Thông tin nhóm
 
-- Tên nhóm:
-- Lớp: L3A hoặc L3B
-- Repo nhóm: `K5-L3A-DAY13-TenNhom-LaunchEconomics` (xem [SUBMISSION.md](SUBMISSION.md))
-- URL repo, nhánh nộp, commit chốt:
+- Tên nhóm: Ba Chang Hiep Si Mong Mo
+- Lớp: L3A
+- Repo nhóm: `K5-L3A-DAY13-bachanghiepsimongmo-LaunchEconomics`
+- URL repo, nhánh nộp, commit chốt: main
 
 ## Thành viên
 
 | STT | Họ tên | MSSV | Email | GitHub | Vai trò |
 | --: | ------ | ---- | ----- | ------ | ------- |
-|   1 |        |      |       |        |         |
-|   2 |        |      |       |        |         |
-|   3 |        |      |       |        |         |
-|   4 |        |      |       |        |         |
+|   1 | Bùi Văn Lâm | 2A202603400 | 26ai.lambv@vinuni.edu.vn | | Trưởng nhóm & Giữ hồ sơ, Gắn nhãn 2 |
+|   2 | [Họ tên bạn Coder] | [MSSV] | [Email] | | Người viết code chính |
+|   3 | Trần Đăng Khoa | 2A202603364 | 26ai.khoatd2@vinuni.edu.vn | | Người kiểm số & Báo cáo, Gắn nhãn 1 |
 
-Bốn vai của lab:
-
-- **Người viết code:** viết và chạy `src/lab13.py`.
-- **Người kiểm số:** tính tay một con số để đối chiếu, điền bảng.
-- **Người gắn nhãn 1:** đọc đề, theo dõi điều kiện "Xong khi"; gắn nhãn 20 ca độc lập ở CP3.
-- **Người gắn nhãn 2, kiêm giữ hồ sơ:** điền `report/team/ho_so_launch_v0.md` từ đầu buổi; gắn nhãn 20 ca độc lập ở CP3.
-
-Đổi người viết code sau giờ giải lao, để ít nhất hai người trong nhóm tự tay tính được chi phí.
+*Ghi chú nhóm 3 người: Trưởng nhóm kiêm giữ hồ sơ, thiết kế pilot và gắn nhãn 2; Thành viên 2 viết code xuyên suốt; Thành viên 3 kiểm số, điền bảng chi phí/độ nhạy và gắn nhãn 1.*
 
 ## Cá nhân
 
-Mỗi thành viên đồng thời tạo một báo cáo riêng trong `report/` theo dạng:
+Mỗi thành viên đồng thời tạo một báo cáo riêng trong `report/team/` theo dạng:
 
 ```text
 report/team/MSSV_HoTen.md
 ```
 
-Ví dụ: `report/team/20241234_NguyenVanAn.md`.
-
-Sao chép mục dưới đây cho từng thành viên.
-
-## HoVaTen-MSSV
-
-### Phần việc phụ trách
-
--
-
-### Đóng góp cụ thể
-
--
-
-### Bằng chứng
-
--
+Ví dụ: `report/team/2A202603400_BuiVanLam.md`.
